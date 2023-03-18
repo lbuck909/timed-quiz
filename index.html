@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  
+  <title>JavaScript Quiz</title>
+</head>
+<body>
+ <!--Begin Quiz Button-->
+  <div class="begin_btn"><button> Begin Quiz</button></div>
+  
+  <!--Rules Box-->
+ <div class=" rules_box">
+    <div class="rules_title">
+      <span> Quiz Guidelines</span>
+    </div>
+ <div class="rules_list">
+    <div class="rule">1. You will be given <span> 90 seconds</span> to complete the quiz. </div>
+    <div class="rule">2. Once you make a selection, you cannot change your inital answer.</div>
+    <div class="rule">3. The timer starts once you get your first question</div>
+    <div class="rule">4. Incorrect answers will subtract 5 seconds from the timer </div>
+    <div class="rule">5. The quiz is completed once the timer runs out or all questions have been answered</div>
+  <div class="buttons">
+    <button class="quit">Quit Quiz</button>
+    <button class="continue">Continue</button>  
+ </div>
+
+ <!-- Question Box-->
+<div class="question_box">
+  <header>
+    <div class="title"> JavaScript Quiz</div>
+      <div class="timer"></div>
+        <div class="timer_countdown">Time Remaining</div>
+      </div>
+  </header>
+  <section>
+    <div class="question_list">
+      <span>What Is NaN in JavaScript?</span>
+      </div>
+      <div class="answer_list">
+        <div class="answer">
+          <span>Sodium and Nitrogen</span>
+          <div class="icon x"><i class="fas fa-close"></i></div>
+        <div class="answer">
+          <span>Not Applicable</span>
+          <div class="icon x"><i class="fas fa-close"></i></div>
+        </div class="answer">
+          <span>Not a legal Number </span>
+          <div class="icon money"><i class="fas fa-dollar"></i>
+          </div>
+        </div class="answer">
+        <span>New Attribute </span>
+        <div class="icon money"><i class="fas fa-close"></i>
+        </div>
+  </section>
+</body>
+</html>
