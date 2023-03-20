@@ -19,15 +19,16 @@ continueBtn.onclick = () => {
 function startQuiz() {
   console.log("start")
   startButton.classList.add('hide')
-  randomQuestions = questions.sort(() => Math.random()-.5)
-  currentQuestion = 0
+  currentQuestion =0
+  
   questionBoxElement.classList.remove('hide')
-  getNextQue()
+  
 }
 
 function getNextQuestion () {
-  resetState () 
-  showQuestion(randomQuestions[currentQuestion])
+  console.log("getNextQue")
+  //resetState () 
+  showQuestion(questions[currentQuestion])
 }
 
 function showQuestion(question) {
