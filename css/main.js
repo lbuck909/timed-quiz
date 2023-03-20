@@ -3,10 +3,12 @@ const startButton = document.querySelector(".start-btn");
 const continueBtn = document.querySelector(".continue");
 const rules_box = document.querySelector(".rules_box");
 const quit = document.querySelector(".quit");
-const questionBoxElement = document.getElementById("question_box");
-// const continue = rules_box.querySelector(".continue");
+const questionBoxElement = document.getElementById("question");
+const answerBtnElement = document.getElementById('answer-btns')
+//const next = rules_box.querySelector(".continue");
+let randomQuestions, currentQuestion
 
-startButton.addEventListner('click', startQuiz)
+startButton.addEventListener('click', startQuiz)
 
 //When Begin Button clicked
 continueBtn.onclick = () => {
@@ -14,9 +16,31 @@ continueBtn.onclick = () => {
 };
 
 function startQuiz() {
-  console.log("start");
-  startButton.questionList.add('hide')
-  questionBoxElement.questionList.remove('hide')
+  console.log("start")
+  start-btn.classList.add('hide')
+  randomQuestions = questions.sort(() => Math.random()-.5)
+  currentQuestion = 0
+  question_box.classList.remove('hide')
+  
+  getNextQue()
+}
+
+function giveNextQuestion () {
+   showQuestion(randomQuestions[currentQuestion])
+}
+
+function showQuestion(question) {
+questionBoxElement.innerText = question.question
+question.answers.forEach(answer => {
+  const button = document.createElement('button')
+  button.innerText =answer.text
+  button.classList.add('btn')
+  if (answer.correct) {
+    button.dataset.correct = answer.correct
+  }
+  button.addEventListener('click', chooseAnswer)
+  answerBtnElement.appendChild(button)
+})
 }
 
 // If user clicks Quit Quiz
