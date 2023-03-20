@@ -1,9 +1,10 @@
 // setup all needed elements
 const startButton = document.querySelector(".start-btn");
 const continueBtn = document.querySelector(".continue");
+const nextBtn = document.querySelector(".next");
 const rules_box = document.querySelector(".rules_box");
 const quit = document.querySelector(".quit");
-const questionBoxElement = document.getElementById("question");
+const questionBoxElement = document.getElementById("question_box");
 const answerBtnElement = document.getElementById('answer-btns')
 //const next = rules_box.querySelector(".continue");
 let randomQuestions, currentQuestion
@@ -24,8 +25,9 @@ function startQuiz() {
   getNextQue()
 }
 
-function giveNextQuestion () {
-   showQuestion(randomQuestions[currentQuestion])
+function getNextQuestion () {
+  resetState () 
+  showQuestion(randomQuestions[currentQuestion])
 }
 
 function showQuestion(question) {
@@ -40,6 +42,20 @@ question.answers.forEach(answer => {
   button.addEventListener('click', chooseAnswer)
   answerBtnElement.appendChild(button)
 })
+}
+function resetState() {
+  nextBtn.classList.add('hide')
+  while (answerBtnElement.firstChild){
+    answerBtnElement.removeChild
+    (answerBtnElement.firstchild)
+  }
+}
+
+
+//score results
+function result() {
+  var score=0;
+  document.getElementById('')
 }
 
 // If user clicks Quit Quiz
