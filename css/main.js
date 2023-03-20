@@ -17,11 +17,10 @@ continueBtn.onclick = () => {
 
 function startQuiz() {
   console.log("start")
-  start-btn.classList.add('hide')
+  startButton.classList.add('hide')
   randomQuestions = questions.sort(() => Math.random()-.5)
   currentQuestion = 0
-  question_box.classList.remove('hide')
-  
+  questionBoxElement.classList.remove('hide')
   getNextQue()
 }
 
