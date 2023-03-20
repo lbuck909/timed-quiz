@@ -1,0 +1,60 @@
+<!-- Questions for Quiz-->
+What is JavaScript?
+a.Makes all webpages slow down
+b.Developed by aliens
+c.CLient-side scripting language answer
+d.Help with Starbucks orders only      
+
+What is NaN in JavaScript?
+a.Sodium and Nitrogen
+b.Not Applicable
+c.New Attribute
+d.Not a legal Number answer
+
+This is a JavaScript Data Type:
+a.Boolean answer
+b.Pauses
+c.Id Tags
+d.ASP script  
+
+What is a Prompt Box?
+a.A box that tells the user game over
+b.Allows user to enter input within a text box answer
+c.Tells the creator Name of application
+d.A warning alert  
+
+Which in not a working timer in JavaScript?
+a.seTimeout
+b.clearInterval
+c.setInterval
+d.addTimer answer  
+
+What does Null mean in JavaScript?
+a.no object 
+b.no valid boolean
+c.no array object
+d.all of the above  answer
+
+What is an undefined value in JavaScript?
+a. Variable used in the code doesn’t exist
+b.Variable is not assigned to any value
+c.Property does not exist.
+d. all of the above answer 
+
+What are JavaScript Cookies?
+a.Small test files stored in a computer answer
+b.Only found at Target
+c.Declared functions
+d.A loop  
+
+What is the use of the push JavaScript?
+a.Adds more elements to an array end answer
+b.adds more elements to the beginning of an array
+c.Adjusts CSS error automatically
+d.Creates a soundtrack for code  
+
+Which is not true of DOM and events in JavaScript?
+a.getElementById, innerHTML Example 
+b.getElementById: To access elements and attributes whose id is set.
+c.mocha.attributeById: testing html structure answer
+d.innerHTML: To access the content of an element.  

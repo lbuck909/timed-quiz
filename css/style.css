@@ -13,29 +13,31 @@ body {
 }
 /* begin quiz button styling*/
 .begin_btn,
-.rules_box{
+.rules_box,
+.question_box{
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%)
-
+  transform: translate(-50%, -50%);
+transition: all 0.3 ease;
 }
 
 .begin_btn button{
   font-size: 40px;
   font-weight: 600;
-  padding: 10px 20px;
   color: rebeccapurple;
+  padding: 10px 20px;
+  outline: none;
+  border: none;
   border-radius: 10px;
   background: aliceblue;
-  outline: none;
   cursor: pointer;
 
 }
 /* style rules_box*/
 
 .rules_box{
-  display: none;
+  
   width: 600px;
   background: aliceblue;
   border-radius: 5px;
@@ -47,7 +49,7 @@ body {
   border-bottom: 2px solid black;
   align-items: center;
   display: flex;
-  padding: 20px;
+  padding: 0 20px;
   font-size: 20px;
   font-weight: 600;
 }
@@ -82,12 +84,14 @@ font-size: 35px;
   margin: 0 10px;
   height: 60px;
   width: 200px;
+  outline: none;
   border: 2px solid black;
   border-radius: 10px;
   color: black;
   font-size: 40px;
   font-weight: 600;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .buttons button.quit{
@@ -111,6 +115,121 @@ font-size: 35px;
   width: 600px;
   background: aliceblue;
   border-radius: 4px;
+  box-shadow: 0 0 15px 4px;
+}
+.buttons button.next{
+  color: aliceblue;
+  background:blue ;
+
+}
+.question_box header{
+  height: 70px;
+  padding: 0 30px;
+  position: relative;
+  z-index: 100;
+  background: aliceblue;
+  border-radius: 4px 4px 0 0;
+  box-shadow: 0px 3px 5px 1px black; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* quiz timer styling*/
+.question_box header .timer{
+  padding: 0 6px;
+  border-radius: 5px;
+  background: teal;
+  border: 1px solid black;
+  width: 200px;
+  height: 60px;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+.question_box header .timer .timer_countdown{
+  font-weight: 400;
+  font-size: 20px;
+  user-select: none;
 }
 
-.
+.question_box header .timer .timer_sec{
+  font-size: 20px;
+  font-weight: 500;
+  background: gray;
+  height: 30px;
+  width: 50px;
+  color: aliceblue;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 5px;
+  border: 1px solid black;
+  user-select: none;
+}
+
+.question_box section{
+  padding: 25px 30px 20px 30px;
+  background: aliceblue;
+}
+.question_box section .question_list{
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.question_box section .answer_list{
+  padding: 20px 0;
+  display: block;
+}
+
+section .answer_list .answer{
+ background: aliceblue;
+ border: 3px solid green;
+ border-radius: 5px;
+ padding: 8px 1px;
+ margin-bottom: 15px;
+ font-size: 18px;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ cursor: pointer;
+ transition: all 0.3s ease;
+ 
+}
+section .answer_list .answer:hover{
+  color: rgb(101, 101, 192);
+  background: aliceblue;
+  border-color: black;
+}
+
+.answer_list .answer:last-child{
+  margin-bottom:  2px;
+}
+.answer_list .answer .icon{
+height: 26px;
+width: 26px;
+border: 3px solid transparent;
+border-radius: 20%;
+text-align: center;
+font-size: 13px;
+line-height: 24px;
+pointer-events: none;
+}
+
+.answer_list .answer .icon.wrong{
+  color: red;
+  border-color: red;
+}
+
+.answer_list .answer .icon.money{
+  color: green;
+  border-color: green;
+}
+.question_box footer{
+  height: 40px;
+  width: 100%;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+
+}

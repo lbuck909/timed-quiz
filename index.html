@@ -14,7 +14,7 @@
   <div class="begin_btn"><button> Begin Quiz</button></div>
   
   <!--Rules Box-->
- <div class=" rules_box">
+ <div class="rules_box">
     <div class="rules_title">
       <span> Quiz Guidelines</span>
     </div>
@@ -33,29 +33,39 @@
 <div class="question_box">
   <header>
     <div class="title"> JavaScript Quiz</div>
-      <div class="timer"></div>
+      <div class="timer">
         <div class="timer_countdown">Time Remaining</div>
+        <div class="timer_sec">90</div> 
       </div>
   </header>
   <section>
     <div class="question_list">
       <span>What Is NaN in JavaScript?</span>
       </div>
+      
       <div class="answer_list">
         <div class="answer">
           <span>Sodium and Nitrogen</span>
-          <div class="icon x"><i class="fas fa-close"></i></div>
-        <div class="answer">
+          <div class="icon wrong"><i class="fas fa-close"></i></div>
+       
+          <div class="answer">
           <span>Not Applicable</span>
-          <div class="icon x"><i class="fas fa-close"></i></div>
+          <div class="icon wrong"><i class="fas fa-close"></i></div>
+        
         </div class="answer">
           <span>Not a legal Number </span>
           <div class="icon money"><i class="fas fa-dollar"></i>
           </div>
+        
         </div class="answer">
         <span>New Attribute </span>
-        <div class="icon money"><i class="fas fa-close"></i>
+        <div class="icon wrong"><i class="fas fa-close"></i>
         </div>
   </section>
+  <!-- Question Box Footer-->
+  <footer></footer> 
+  <button class="next_btn">Next</button>
+</footer> 
+<script src="script.js"></script>
 </body>
 </html>
