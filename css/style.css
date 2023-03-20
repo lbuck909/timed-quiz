@@ -41,6 +41,7 @@ body {
 /* style rules_box*/
 
 #rules_box {
+  display: none;
   width: 600px;
   background: aliceblue;
   border-radius: 5px;
