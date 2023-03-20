@@ -1,11 +1,11 @@
 /* import google font choice*/
-@import url('https://fonts.googleapis.com/css2?family=Cuprum&display=swap');
-*{
+@import url("https://fonts.googleapis.com/css2?family=Cuprum&display=swap");
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-size: 50px;
-  font-family: 'Cuprum', sans-serif;
+  font-family: "Cuprum", sans-serif;
 }
 
 body {
@@ -13,16 +13,21 @@ body {
 }
 /* begin quiz button styling*/
 .begin_btn,
-.rules_box,
-.question_box{
+#rules_box,
+#question_box {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-transition: all 0.3 ease;
+  transition: all 0.3 ease;
 }
 
-.begin_btn button{
+/* // hide and show pages with this */
+
+.hide {
+  display: none;
+}
+.begin_btn button {
   font-size: 40px;
   font-weight: 600;
   color: rebeccapurple;
@@ -32,18 +37,16 @@ transition: all 0.3 ease;
   border-radius: 10px;
   background: aliceblue;
   cursor: pointer;
-
 }
 /* style rules_box*/
 
-.rules_box{
-  
+#rules_box {
   width: 600px;
   background: aliceblue;
   border-radius: 5px;
 }
 
-.rules_box .rules_title{
+#rules_box .rules_title {
   height: 80px;
   width: 100%;
   border-bottom: 2px solid black;
@@ -55,21 +58,21 @@ transition: all 0.3 ease;
 }
 /* styling for the list of guidelines*/
 
-.rules_box .rules_list{
+#rules_box .rules_list {
   padding: 10px 20px;
 }
 
-.rules_box .rules_list .rule{
-margin: 5px 0;
-font-size: 35px;
+#rules_box .rules_list .rule {
+  margin: 5px 0;
+  font-size: 35px;
 }
 
-.rules_box .rules_list .rule span{
+#rules_box .rules_list .rule span {
   font-weight: 600;
   color: red;
 }
 /* continue & quit quiz button styling*/
-.rules_box .buttons{
+#rules_box .buttons {
   border-top: 2px solid blue;
   display: flex;
   align-items: center;
@@ -78,9 +81,9 @@ font-size: 35px;
   justify-content: center;
   justify-content: space-around;
   border-radius: 5px;
-  }
+}
 
-.rules_box .buttons button{
+#rules_box .buttons button {
   margin: 0 10px;
   height: 60px;
   width: 200px;
@@ -94,48 +97,48 @@ font-size: 35px;
   transition: all 0.3s ease;
 }
 
-.buttons button.quit{
+.buttons button.quit {
   color: #fff;
   background: rgb(158, 2, 2);
 }
 
-.buttons button.quit:hover{
-  background: peru
+.buttons button.quit:hover {
+  background: peru;
 }
-.buttons button.continue{
+.buttons button.continue {
   color: #fff;
   background: blue;
 }
 
-.buttons button.continue:hover{
-  background: green
+.buttons button.continue:hover {
+  background: green;
 }
 /* question box styling*/
-.question_box{
+#question_box {
   width: 600px;
   background: aliceblue;
   border-radius: 4px;
   box-shadow: 0 0 15px 4px;
 }
-.buttons button.next{
-  color: aliceblue;
-  background:blue ;
 
+.next_btn {
+  color: aliceblue;
+  background: blue;
 }
-.question_box header{
+#question_box header {
   height: 70px;
   padding: 0 30px;
   position: relative;
   z-index: 100;
   background: aliceblue;
   border-radius: 4px 4px 0 0;
-  box-shadow: 0px 3px 5px 1px black; 
+  box-shadow: 0px 3px 5px 1px black;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 /* quiz timer styling*/
-.question_box header .timer{
+#question_box header .timer {
   padding: 0 6px;
   border-radius: 5px;
   background: teal;
@@ -146,13 +149,13 @@ font-size: 35px;
   align-items: center;
   display: flex;
 }
-.question_box header .timer .timer_countdown{
+#question_box header .timer .timer_countdown {
   font-weight: 400;
   font-size: 20px;
   user-select: none;
 }
 
-.question_box header .timer .timer_sec{
+#question_box header .timer .timer_sec {
   font-size: 20px;
   font-weight: 500;
   background: gray;
@@ -166,70 +169,73 @@ font-size: 35px;
   user-select: none;
 }
 
-.question_box section{
+#question_box section {
   padding: 25px 30px 20px 30px;
   background: aliceblue;
 }
-.question_box section .question_list{
+#question_box section .question_list {
   font-weight: 600;
   font-size: 25px;
 }
 
-.question_box section .answer_list{
+#question_box section .answer_list {
   padding: 20px 0;
   display: block;
 }
 
-section .answer_list .answer{
- background: aliceblue;
- border: 3px solid green;
- border-radius: 5px;
- padding: 8px 1px;
- margin-bottom: 15px;
- font-size: 18px;
- display: flex;
- align-items: center;
- justify-content: space-between;
- cursor: pointer;
- transition: all 0.3s ease;
- 
+section .answer_list .answer {
+  background: aliceblue;
+  border: 3px solid green;
+  padding: 20px;
+  border-radius: 5px;
+  margin: 15px;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
-section .answer_list .answer:hover{
+section .answer_list .answer:hover {
   color: rgb(101, 101, 192);
   background: aliceblue;
   border-color: black;
 }
 
-.answer_list .answer:last-child{
-  margin-bottom:  2px;
+.answer_list .answer:last-child {
+  margin-bottom: 2px;
 }
-.answer_list .answer .icon{
-height: 26px;
-width: 26px;
-border: 3px solid transparent;
-border-radius: 20%;
-text-align: center;
-font-size: 13px;
-line-height: 24px;
-pointer-events: none;
+.answer_list .answer .icon {
+  height: 26px;
+  width: 26px;
+  border: 3px solid transparent;
+  border-radius: 20%;
+  text-align: center;
+  font-size: 13px;
+  line-height: 24px;
+  pointer-events: none;
 }
 
-.answer_list .answer .icon.wrong{
+.answer_list .answer .icon.wrong {
   color: red;
   border-color: red;
 }
 
-.answer_list .answer .icon.money{
+.answer_list .answer .icon.money {
   color: green;
   border-color: green;
 }
-.question_box footer{
+#question_box footer {
   height: 40px;
   width: 100%;
   padding: 0 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
 
-
+.answer {
+  display: flex;
+  text-align: start;
+  font-size: 18px;
 }

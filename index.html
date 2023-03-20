@@ -14,7 +14,7 @@
   <div class="begin_btn"><button> Begin Quiz</button></div>
   
   <!--Rules Box-->
- <div class="rules_box">
+ <div id="rules_box">
     <div class="rules_title">
       <span> Quiz Guidelines</span>
     </div>
@@ -30,7 +30,7 @@
  </div>
 
  <!-- Question Box-->
-<div class="question_box">
+<div class="hide" id="question_box">
   <header>
     <div class="title"> JavaScript Quiz</div>
       <div class="timer">
@@ -47,25 +47,26 @@
         <div class="answer">
           <span>Sodium and Nitrogen</span>
           <div class="icon wrong"><i class="fas fa-close"></i></div>
-       
+       </div>
           <div class="answer">
           <span>Not Applicable</span>
           <div class="icon wrong"><i class="fas fa-close"></i></div>
-        
-        </div class="answer">
+            </div>
+        <div class="answer">
           <span>Not a legal Number </span>
           <div class="icon money"><i class="fas fa-dollar"></i>
           </div>
-        
-        </div class="answer">
+        </div>
+        <div class="answer">
         <span>New Attribute </span>
         <div class="icon wrong"><i class="fas fa-close"></i>
+          </div>
         </div>
   </section>
   <!-- Question Box Footer-->
   <footer></footer> 
   <button class="next_btn">Next</button>
 </footer> 
-<script src="script.js"></script>
+<script src="./css/main.js"></script>
 </body>
 </html>
