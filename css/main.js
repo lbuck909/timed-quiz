@@ -1,5 +1,5 @@
 // setup all needed elements
-const startButton = document.getElementById("begin_btn");
+const startButton = document.querySelector(".start-btn");
 const continueBtn = document.querySelector(".continue");
 const rules_box = document.querySelector(".rules_box");
 const quit = document.querySelector(".quit");
@@ -7,6 +7,7 @@ const questionBoxElement = document.getElementById("question_box");
 // const continue = rules_box.querySelector(".continue");
 
 startButton.addEventListner('click', startQuiz)
+
 //When Begin Button clicked
 continueBtn.onclick = () => {
   startQuiz();
