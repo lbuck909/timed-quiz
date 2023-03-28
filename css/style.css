@@ -123,8 +123,18 @@ body {
 }
 
 .next_btn {
-  color: aliceblue;
-  background: blue;
+  font-size: 40px;
+  font-weight: 600;
+  color: brown;
+  padding: 10px 20px;
+  outline: black;
+  border: 2px solid black;
+  border-radius: 10px;
+  display: flex;
+  justify-content: right;
+  justify-content: right;
+  background: almond;
+  cursor: pointer;
 }
 #question_box header {
   height: 70px;
@@ -186,7 +196,7 @@ body {
 
 section .answer_list .answer {
   background: aliceblue;
-  border: 3px solid green;
+  border: 3px solid teal;
   padding: 20px;
   border-radius: 5px;
   margin: 15px;
